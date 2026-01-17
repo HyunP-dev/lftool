@@ -1,0 +1,22 @@
+[project]
+name = "lftool"
+version = "0.1.0"
+description = "Log based Forensics Tool"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "geoip2>=5.2.0",
+    "joblib>=1.5.3",
+    "polars>=1.37.0",
+    "pyside6>=6.10.1",
+    "tqdm>=4.67.1",
+]
+
+[dependency-groups]
+dev = [
+    "ipython>=9.9.0",
+]
+
+[build-system]
+requires = ["uv_build>=0.9.22,<0.10.0"]
+build-backend = "uv_build"
